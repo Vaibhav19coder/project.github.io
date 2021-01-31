@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic</title>
+    <link rel="stylesheet" href="book.css">
+    <script>
+        function price1(){
+            var x = document.getElementById("para1");
+            if (x.style.display === "none") {
+            x.style.display = "block";
+            } 
+            else {
+            x.style.display = "none";
+            }
+            }
+            function price2()
+            {
+                var x=document.getElementById("para2");
+                if(x.style.display==="none")
+            {
+                x.style.display="block";
+            }
+                else
+                {
+                    x.style.display="none";
+                }
+            } 
+    
+    </script>
+</head>
+<body>
+    <h1>Royal Enfield Classic</h1>
+    <img src="classic.jpg" alt="">
+    <br><br><br>
+    <h2>Specifications</h2>
+    <table style="margin-left: 250px;">
+        <tbody>
+            <tr><td>1. &nbsp&nbsp Engine</td>
+            <td style="padding-left:100px;">Single cylinder 4 stroke, air-cooled fuel injection</td>
+            </tr>
+            <tr>
+                <td>2. &nbsp&nbsp Max Power</td>
+                <td style="padding-left: 100px;">20.07 PS @ 5250 rpm</td>
+            </tr>
+            <tr>
+                <td>3. &nbsp&nbsp Fuel Capacity</td>
+                <td style="padding-left: 100px;">13.5L</td>
+            </tr>
+            <tr>
+                <td>4. &nbsp&nbsp No. of cylinders</td>
+                <td style="padding-left: 100px;">1</td>
+            </tr>
+            <tr>
+                <td>5. &nbsp&nbsp Max torque</td>
+                <td style="padding-left: 100px;">28 Nm @ 4000 rpm</td>
+            </tr>
+            <tr><td>6. &nbsp&nbsp Colour</td>
+           <td style="padding-left: 100px;">Black</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Choose your requirement</h2>
+    <button onclick="price1()">Hour Basis</button>
+    <p class="priced" id="para1">1000 rupees/hr
+        <a href="">BOOK NOW</a>
+    </p>
+    <br><br><br>
+    <button onclick="price2()">Day Basis</button> 
+     <p class="priced" id="para2">3000 rupees/hr
+        <a href="">BOOK NOW</a>
+     </p>   
+   <footer>
+       VSV Rental Services <br>
+       Founders:- Saumya Gupta, Vikrant Kumar, Vaibhav Negi
+   </footer>
+</body>
+</html>

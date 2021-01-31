@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>vsv.com</title>
+	<link rel="shortcut icon"  href="logo.jfif" type="image/jfif">
+	<style type="text/css">
+		body{
+			padding: 10px;
+			margin: 10px;
+  			 font-family: 'Dancing Script', cursive;
+ 			  background-image: url(2.jpg);
+ 			  background-repeat: no-repeat;
+ 			  background-attachment: fixed;
+ 			  background-size: cover;
+ 			  background-position: center;
+ 			  backdrop-filter:blur(2px);
+			}
+		#register{
+			position: relative;
+			padding: 10px;
+			margin: 40px 200px 100px 1000px;
+			 z-index: -1;
+			 opacity: 0.8;
+			 height: 520px;
+			 width:250px;
+			 border-radius: 10px;
+			 background-color: #D4DEDE ;
+			}
+			#image{
+				height:800px; 
+				width:1350px;
+			}
+
+</style>
+</head>
+<body>
+	<div id="register">
+		<form>
+		<b>REGISTER</b>
+		<p>already have account?<a href="login-page.html " style="color:blue;">Login Now</a></p>
+		<label for="user-name"> <b> User Name:</b></label><br>
+		<select>
+			<option>Mr</option>
+			<option>Miss</option>
+			<option>Mrs</option>
+		</select>
+		<input type="text" name="user-name" placeholder="Enter your name" autofocus required="yes"><br>
+		<label for="user-id"><b>Email Id:</b></label><br>
+		<input type="email" name="user-id" placeholder="Enter your email" required="yes"><br>
+		<label for="user-pswd"><b> Password:</b></label>
+		<br>
+		<input type="password" name="user-pswd" >
+		<br>
+		<label for="user-pswd"><b>Re-Password:</b></label>
+		<br>
+		<input type="password" name="user-pswd" required="yes">
+		<br>
+		<label for="number"><b>Phone Number:</b></label><br>
+		<select name="number">
+			<option>+91</option>
+			<option>+63</option>
+		</select>
+		<input type="tel" name="number" minlength="5" maxlength="10" required="yes"><br>
+		<label for="gender"><b>Gender:</b></label><br>
+			Male<input type="radio" name="gender"><br>
+			Female<input type="radio" name="gender"><br>
+			Other<input type="radio" name="gender">
+		<br>
+			<label for="Document-type"><b>Document Type:</b></label>
+			<select name="Document-type">
+			<option>Aadhar Card</option>
+			<option>Pan Card</option>
+			<option>Driving License</option>
+		</select> <br>
+		<label for="file"><b>Upload File:</b></label><br>
+		<input type="file" name="file" required="yes"><br><br>
+		<input type="submit" name="register" value="REGISTER" style="width: 100%;text-align: center; cursor: pointer;"">
+	</form>
+	</div>
+</body>
+</html>

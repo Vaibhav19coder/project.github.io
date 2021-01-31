@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon"  href="logo.jfif" type="image/jfif">
+<link rel="stylesheet" type="text/css" href="home.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.mySlides {display:none;}
+</style>
+
+<title>vsv.com</title>
+</head>
+<body bgcolor="black" >
+	<header>
+	<nav>
+	<ul>
+		<span> <img src="icon.png" height="60px" width="150px"></span>
+		
+			
+			<li><a href="about-page.html">ABOUT US</a></li>
+			<li><a href="payments-page.html">PAYMENTS</a></li>
+			<li><a href="bikes.html">BOOKING</a></li>
+			<li><a href="register-page.html">REGISTER</a></li>
+			<li><a href="login-page.html">LOGIN</a></li>
+			<li class="active"><a href="home-page.html">HOME</a></li>
+
+		</ul>
+		</nav>
+			<img class="mySlides" src="1.jpg" height="40%" width="100%">
+<img class="mySlides" src="2.jpg"  height="40%" width="100%">
+<img class="mySlides" src="3.jpg"  height="40%" width="100%">
+<script type="text/javascript">
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++)
+   {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 3000); // Change image every 3 seconds
+}
+</script>
+	</header>
+	<footer>
+  <div class="footer">
+  <ul>
+  	<li><a href="about-page.html">ABOUT</a></li>
+  	<li><a href="mailto:saumyagupta99.sg@gmail.com">saumyagupta99.sg@gmail.com</a></li>
+  	<li><a href="mailto:vaibhav19football@gmail.com">Vaibhav19football@gmail.com</a></li>
+  	<li><address>
+   	Postal Code:249201 ,city:Rishikesh ,Country:India
+  </address></li>
+  	<li><p>Copyright © VSV. All rights reserved.</p></li>
+  	
+  </ul>
+  </div>
+</footer> 
+</body>
+</html>
